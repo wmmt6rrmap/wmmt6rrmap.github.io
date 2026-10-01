@@ -6,14 +6,14 @@
   <meta name="description" content="WMMT 6RR 路线图鉴：浏览 15 个区域的 250 条道路路线，查看起点、终点与行驶方向。">
   <meta name="referrer" content="no-referrer">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
-  <title>6rrmap · WMMT 6RR 路线图鉴</title>
+  <title>SoulG6rrMap图鉴 · WMMT 6RR 路线图鉴</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230f172a'/%3E%3Cpath d='M45 15H26L17 32l9 17h19V32H17' fill='none' stroke='%237ee7c2' stroke-width='7' stroke-linejoin='round'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="./styles.css">
   <script src="./routes.js" defer></script>
   <script src="./app.js" defer></script>
 </head>
 <body>
-  <header class="topbar"><a class="brand" href="./" aria-label="6rrmap 首页"><span class="brand-symbol" aria-hidden="true">6</span><span>6rr<span class="brand-light">map</span></span></a><span class="topbar-note">WMMT 6RR / 路线图鉴</span><span class="view-only"><i></i>玩家预览</span></header>
+  <header class="topbar"><a class="brand" href="./" aria-label="SoulG6rrMap图鉴 首页"><span class="brand-symbol" aria-hidden="true">6</span><span>SoulG6rr<span class="brand-light">Map图鉴</span></span></a><span class="topbar-note">WMMT 6RR / 路线图鉴</span><span class="view-only"><i></i>玩家预览</span></header>
   <main>
     <section class="intro"><div class="eyebrow">EXPLORE THE ROADS</div><h1>每一段路，<span>都有新的可能。</span></h1><p>选择区域与路线，看看下一段旅程从哪里出发。</p><div class="stats"><span><b>15</b> 个区域</span><span><b>250</b> 条路线</span><span class="intro-legend"><i class="dot start"></i>起点 <i class="dot finish"></i>终点 <b class="direction-symbol">›</b>行驶方向</span></div></section>
     <section class="explorer" aria-label="路线浏览">
@@ -27,7 +27,7 @@
     </section>
     <section class="notice"><span class="notice-icon" aria-hidden="true">i</span><p>图中为道路中心线示意，标记标准赛程的起点、终点和行驶方向，不代表实际车道宽度。扩展与实验路线可能需要对应客户端适配；实验新起点路线仍需实机验收。页面选择仅用于预览，不会更改游戏路线或服务器设置。</p></section>
   </main>
-  <footer><span class="footer-brand">6rrmap</span><span>WMMT 6RR 路线预览 · 仅供浏览</span></footer>
+  <footer><span class="footer-brand">SoulG6rrMap图鉴</span><span>WMMT 6RR 路线预览 · 仅供浏览</span></footer>
   <dialog id="route-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><div><span id="dialog-category" class="badge"></span><h2 id="dialog-title"></h2></div><button id="close-dialog" class="close-dialog" type="button" aria-label="关闭路线预览">×</button></div><div id="dialog-map" class="dialog-map"></div><div class="dialog-detail"><div class="legend"><span><i class="dot start"></i>起点</span><span><i class="dot finish"></i>终点</span><span><b class="direction-symbol">›</b>行驶方向</span></div><div class="endpoints"><div><span>从这里出发</span><strong id="dialog-start"></strong></div><span class="endpoints-arrow" aria-hidden="true">→</span><div><span>在这里抵达</span><strong id="dialog-end"></strong></div></div><h3>沿途路段</h3><p id="dialog-roads"></p><p id="dialog-note" class="dialog-note"></p></div></dialog>
   <noscript><p class="noscript">请启用浏览器 JavaScript 以查看路线。本页仅使用静态路线数据，不连接游戏服务。</p></noscript>
 </body>
